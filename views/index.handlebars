@@ -1,5 +1,5 @@
 <main class="container">
-    <h1>Burgers</h1>
+    <h1 class="text-center">Burgers</h1>
 
     <section class="row">
         {{!-- not devoured col --}}
@@ -11,7 +11,7 @@
             {{#unless devoured}}
             <div class="input-group-row" data-id="{{id}}" data-devour="{{devoured}}">
 
-                <span>{{id}} {{burger_name}}</span>
+                <span>{{id}}.</span> <span>{{burger_name}}</span>
                 <button class="btn btn-primary devour">Devour it!</button>
 
             </div>
@@ -26,7 +26,7 @@
             {{#if devoured}}
             <div class="input-group-row" data-id="{{id}}" data-devour="{{devoured}}">
 
-                <span>{{id}} {{burger_name}}</span>
+                {{id}}.{{burger_name}}
 
 
             </div>
@@ -41,6 +41,7 @@
 
     </section>
     <section class="text-area">
+        <h1>Please add your burger</h1>
         <form class="add-burger">
             <div class="form-group">
                 <textarea class="form-control"></textarea>

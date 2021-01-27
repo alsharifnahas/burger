@@ -4,7 +4,7 @@ const burger = require("../models/burger");
 
 router.get("/", (req, res) => {
     burger.all((data) => {
-        console.log(data);
+
         const burgerObject = {
             burger: data
         };
@@ -22,7 +22,6 @@ router.put("/api/burgers/:id", (req, res) => {
 
 
     burger.update([req.body.devoured, req.params.id], (results) => {
-        console.log(results)
         res.status(202).end();
     })
 })
