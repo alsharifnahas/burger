@@ -1,0 +1,23 @@
+.btn {
+  padding: 0px;
+  font-size: 10px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-devoured {
+  background-color: orange;
+}
+.devoured {
+  background-color: lightgray;
+}
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+}
